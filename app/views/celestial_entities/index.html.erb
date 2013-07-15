@@ -1,0 +1,12 @@
+<h1>Celestial Entities</h1>
+
+<ul class='nowrap'>
+<% @celestial_entities.each do |celestial_entity| %>
+  <li  onclick='window.open("<%= url_for(celestial_entity) %>");' >
+    <%= image_tag 'celestial_entities/' + celestial_entity.name + '.jpg', :class => 'thumbnail' %>
+    <div><%= celestial_entity.name %></div>
+  </li>
+<% end %>
+</ul>
+
+<!--<%= link_to 'New Celestial entity', new_celestial_entity_path %>-->

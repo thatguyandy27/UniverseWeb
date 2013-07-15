@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  description: MyString
+  mass: 1
+  orbit: 1
+  rotation: 1
+
+two:
+  name: MyString
+  description: MyString
+  mass: 1
+  orbit: 1
+  rotation: 1

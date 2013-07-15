@@ -1,0 +1,14 @@
+body
+{
+    background-color:black;
+    color:white;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.thumbnail
+{
+    width:300px;
+    cursor:pointer;
+}
+

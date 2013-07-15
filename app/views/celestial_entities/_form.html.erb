@@ -1,0 +1,37 @@
+<%= form_for(@celestial_entity) do |f| %>
+  <% if @celestial_entity.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@celestial_entity.errors.count, "error") %> prohibited this celestial_entity from being saved:</h2>
+
+      <ul>
+      <% @celestial_entity.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :mass %><br />
+    <%= f.number_field :mass %>
+  </div>
+  <div class="field">
+    <%= f.label :orbit %><br />
+    <%= f.number_field :orbit %>
+  </div>
+  <div class="field">
+    <%= f.label :rotation %><br />
+    <%= f.number_field :rotation %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

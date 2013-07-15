@@ -1,0 +1,1 @@
+rails generate scaffold celestial_entity name:string description:string mass:integer orbit:integer rotation:integer

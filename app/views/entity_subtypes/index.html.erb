@@ -1,0 +1,23 @@
+<h1>Listing entity_subtypes</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @entity_subtypes.each do |entity_subtype| %>
+  <tr>
+    <td><%= entity_subtype.name %></td>
+    <td><%= link_to 'Show', entity_subtype %></td>
+    <td><%= link_to 'Edit', edit_entity_subtype_path(entity_subtype) %></td>
+    <td><%= link_to 'Destroy', entity_subtype, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Entity subtype', new_entity_subtype_path %>

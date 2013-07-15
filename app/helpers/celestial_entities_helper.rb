@@ -1,0 +1,2 @@
+module CelestialEntitiesHelper
+end

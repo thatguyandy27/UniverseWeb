@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UniverseWeb</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+    <div id='navMenu'>
+        <ul class='menu'>
+            <li><%= link_to 'Celestial Entities' , celestial_entities_path %>
+                <ul>
+                    <li><%= link_to 'All' , celestial_entities_path %>
+                    </li>
+                    <% EntityType.all.each do |type| %>
+                        <li><%= link_to type.name, celestial_entities_path(entity_typeid: type.id )%></li>
+                    <% end  %>
+                </ul>
+            </li>
+            
+        </ul>
+        <ul class='menu'>
+            <li><%= link_to 'About', about_path %></li>
+        </ul>
+    </div>
+
+<%= yield %>
+
+</body>
+</html>

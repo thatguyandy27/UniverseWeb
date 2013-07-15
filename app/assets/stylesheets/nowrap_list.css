@@ -1,0 +1,9 @@
+ul.nowrap{
+    list-style-type:none;
+}
+ul.nowrap li
+{
+    display:inline-block;
+    text-align:center;
+    
+}

@@ -1,0 +1,1 @@
+rails generate migration add_fields_to_celestial_entity radius:integer volume:integer mass:integer density:double gravity:double parent_id:integer
