@@ -1,3 +1,59 @@
 <%= javascript_include_tag params[:controller] %> 
 
-<%= image_tag 'celestial_entities/earth.jpg' %>
+ <h1>Featured Article</h1>
+ 
+<p id="notice"><%= notice %></p>
+
+<h2>
+  <%= @celestial_entity.name %>
+</h2>
+<%= image_tag 'celestial_entities/' + @celestial_entity.name + '.jpg', :class => 'thumbnail'  %>
+
+<p>
+  <b>Description:</b>
+  <%= @celestial_entity.description %>
+</p>
+
+<p>
+  <b>Mass:</b>
+  <%= @celestial_entity.mass %>
+   x 10^21 kg 
+</p>
+
+<p>
+    <b>Mean Radius:</b>
+    <%= @celestial_entity.radius %>
+     km
+</p>
+
+<p>
+    <b>Volume</b>
+    <%= @celestial_entity.volume %>
+    x 10^9 km3
+</p>
+
+<p>
+    <b>Density</b>
+    <%= @celestial_entity.density %>
+    g/cm3
+</p>
+
+<p>
+    <b>Surface Gravity</b>
+    <%= @celestial_entity.gravity %>
+    m/s2
+</p>
+
+<p>
+  <b>Orbit:</b>
+  <%= @celestial_entity.orbit %>
+</p>
+
+<p>
+  <b>Rotation:</b>
+  <%= @celestial_entity.rotation %>
+</p>
+
+
+<!--<%= link_to 'Edit', edit_celestial_entity_path(@celestial_entity) %> -->
+<%= link_to 'All Celestial Entities', celestial_entities_path %>

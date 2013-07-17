@@ -3,7 +3,7 @@
 <h1>
   <%= @celestial_entity.name %>
 </h1>
-<%= image_tag 'celestial_entities/' + @celestial_entity.name + '.jpg' %>
+<%= image_tag 'celestial_entities/' + @celestial_entity.name + '.jpg', :class => 'thumbnail'  %>
 
 <p>
   <b>Description:</b>
@@ -13,6 +13,31 @@
 <p>
   <b>Mass:</b>
   <%= @celestial_entity.mass %>
+   x 10^21 kg 
+</p>
+
+<p>
+    <b>Mean Radius:</b>
+    <%= @celestial_entity.radius %>
+     km
+</p>
+
+<p>
+    <b>Volume</b>
+    <%= @celestial_entity.volume %>
+    x 10^9 km3
+</p>
+
+<p>
+    <b>Density</b>
+    <%= @celestial_entity.density %>
+    g/cm3
+</p>
+
+<p>
+    <b>Surface Gravity</b>
+    <%= @celestial_entity.gravity %>
+    m/s2
 </p>
 
 <p>

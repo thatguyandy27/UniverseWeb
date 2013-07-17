@@ -22,9 +22,9 @@ ActiveRecord::Schema.define(:version => 20130627124636) do
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
     t.integer  "radius"
-    t.float    "volume"
-    t.float    "density"
-    t.float    "gravity"
+    t.decimal  "volume"
+    t.decimal  "density"
+    t.decimal  "gravity"
     t.integer  "parent_id"
     t.integer  "entity_subtypeid"
   end
