@@ -27,10 +27,13 @@ margin:-8px;
     margin:0 1px;
  /*   display:none; */
 }
+.menu li > *
+{
+   padding:0 0 0 20px;
+}
 .menu li a 
 {
     display:block;
-    padding:0 0 0 20px;
     height:25px;
     text-decoration:none;
     color:#fff;
